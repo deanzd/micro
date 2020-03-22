@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.eking.momp.mybatis.autoconfig.MompMybatisAutoConfig,\
+    com.eking.momp.mybatis.autoconfig.DataSourceAutoConfig

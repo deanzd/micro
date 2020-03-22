@@ -1,0 +1,1 @@
+server:  port: 8084spring:  application:  cloud:    stream:      bindings:        output:          destination: entity-search-topic          content-type: text/plain

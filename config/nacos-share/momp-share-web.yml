@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.6.55:8848
+    sentinel:
+      transport:
+        dashboard: 192.168.6.55:8070
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://192.168.6.55:9411/
+feign:
+  sentinel:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 2000
+        readTimeout: 2000
+        loggerLevel: full
+        retryer:
+          maxAttempts: 3

@@ -1,0 +1,1 @@
+server:  port: 8082spring:  application:    name: momp-orglogging:  level:    com.eking.momp.org.dao: debug

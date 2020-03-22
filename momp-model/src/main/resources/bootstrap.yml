@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_SERVER_ADDR}
+      config:
+        server-addr: ${NACOS_SERVER_ADDR}
+        file-extension: yaml
+        shared-dataids: momp-share-web.yml,momp-share-mybatis.yml
+        refreshable-dataids: momp-share-web.yml,momp-share-mybatis.yml

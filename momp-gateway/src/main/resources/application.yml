@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: momp-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+      routes:
+        - id: momp-auth
+          uri: lb://momp-auth
+          predicates:
+            - Path=/api/auth/**
+          filters:
+            - StripPrefix=2
+        - id: momp-org
+          uri: lb://momp-org
+          predicates:
+            - Path=/api/org/**
+          filters:
+            - StripPrefix=2
+        - id: momp-menu
+          uri: lb://momp-menu
+          predicates:
+            - Path=/api/menu/**
+          filters:
+            - StripPrefix=2
+    nacos:
+      discovery:
+        server-addr: ${NACOS_SERVER_ADDR}
+server:
+  port: 8080

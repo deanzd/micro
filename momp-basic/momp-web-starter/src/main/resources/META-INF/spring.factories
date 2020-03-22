@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.eking.momp.web.autoconfig.MompWebAutoConfig,\
+    com.eking.momp.web.autoconfig.RedisAutoConfig,\
+    com.eking.momp.web.autoconfig.Swagger2AutoConfig
