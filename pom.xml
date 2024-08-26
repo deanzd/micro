@@ -21,7 +21,7 @@
 
 		<mybatis-plus.version>3.3.0</mybatis-plus.version>
 		<easyexcel.version>2.0.0</easyexcel.version>
-		<springfox-swagger.verstion>2.9.2</springfox-swagger.verstion>
+		<springfox-swagger.verstion>2.10.0</springfox-swagger.verstion>
 		<spring-boot-admin.version>2.1.6</spring-boot-admin.version>
 		<elasticsearch.version>7.3.1</elasticsearch.version>
 		<jjwt.version>0.9.1</jjwt.version>
